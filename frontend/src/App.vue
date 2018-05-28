@@ -139,7 +139,7 @@ export default {
     },
 
     submit () {
-      let host = 'http://localhost:8888/';
+      let host = 'http://cjc96.com:8888/';
       let currentName = this.links[this.currentPage - 1].slice(1);
       let url = host + `get_ans?location=${currentName}&xmin=${this.input_info.xmin}&ymin=${this.input_info.ymin}&xmax=${this.input_info.xmax}&ymax=${this.input_info.ymax}&epsilon=${1.0/this.input_info.Epsilon}`;
       fetch(url)
